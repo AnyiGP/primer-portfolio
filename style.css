@@ -1,0 +1,21 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    width: 540px;
+    justify-content: left;
+}
+
+main{
+background-color: whitesmoke;
+}
+
+
+
