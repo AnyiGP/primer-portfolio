@@ -1,21 +1,352 @@
-*{
-    margin: auto;
+* {
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navegador{
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    
+    /*DEBE QUEDAR FIJO ARRIBA*/
+  }
+  
+a {
+    text-decoration: none;   
+}
+
+.nav1 ,
+.nav2 ,
+.nav3 {
+  width: 10vw;
+  height: 0.5em;
+  margin: 1em;
+  padding: 1em;
+  
+}
+  
+.nav4 {
+  width: 10vw;
+  height: 0.5em;
+  margin: 1em;
+  padding: 1em;
+  color: white;
+  background-color: rgb(148, 21, 252);
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/***************************
+MAIN
+****************************/
+
+main {
+  background-color: whitesmoke;
+}
+
+.contenedor {
+    background-color: white;
+    box-shadow: inset 1px 10px 10px -3px rgba(170, 170, 170, 0.371);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.Hola h1 {
+  margin-top: 1em;
+  color: rgb(21, 21, 73);
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.AngiGP {
+  margin-top: 0.5em;
+  color: blueviolet;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+section h3 {
+  margin-top: 2em;
+  color: rgb(21, 21, 73);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.boton {
+  width: 10em;
+  height: 0.5em;
+  margin: 0;
+  margin-top: 2em;
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: rgb(148, 21, 252);
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto1 {
+  width: 20em;
+  display: flex;
+}
+
+/*************************************
+CONOCIMIENTOS
+***************************************/
+
+.Conocimientos {
+  width: auto;
+  height: auto;
+  margin: 2em;
+  padding: 1em;
+}
+
+.Conocimientos h1 ,
+.Proyectos h1 {
+  font-size: 3em;
+  font-weight: 850;
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Conocimientos p ,
+.Proyectos p {
+  padding-top: 2em;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html5,
+.css3,
+.sass,
+.java,
+.react,
+.git {
+  /*SE ADAPTA AL TAMANO DE LA PAGINA, SI ES AL 100 SON 3 COLUMNAS, SI ES MAS CHICO SON 2, LAS CJAS MANTIENE SU TAMANO, LO MISMO CON LA SECTION MIS PROYECTOS*/
+  width: 18vw;
+  height: 16vw;
+  margin: 2em;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************************************
+CITA
+****************************************/
+
+.cita {
+  width: auto;
+  height: auto;
+  background-color: blueviolet;
+}
+
+.cita h1 {
+  font-size: 15em;
+  color: white;
+  font-style: oblique;
+  text-align: center;
+  line-height: 1em;
+}
+
+blockquote {
+  color: white;
+  text-align: center;
+}
+
+.cita h2 {
+  margin: 2em;
+  padding: 2em;
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  text-align: center;
+}
+
+/****************************************
+PROYECTOS
+*****************************************/
+
+.Proyectos {
+  width: auto;
+  height: auto;
+  margin: 2em;
+  padding: 1em;
+  background-color: whitesmoke;
+}
+
+.Proyectos p {
+  padding-top: 2em;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portafolio,
+.memes,
+.match,
+.controlador,
+.reuniones,
+.app,
+.buscador {
+  width: 18vw;
+  height: 16vw;
+  margin: 2em;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contenedor3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/****************************
+CONTACTO
+**********************************/
+
+/* .Contacto {
+  width: 60vw;
+  height: auto;
+  margin: 10em;
+  padding: 4em;
+  background-color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 1em;
+  display: flex;
+} */
+
+.contacto {
+    display: flex;
+}
+
+.contactame h1 ,
+.formulario h1 {
+    font-size: 3em;
+    font-weight: 850;
+    color: cornflowerblue;
+  }
+
+.contactame p {
+    padding-top: 2em;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: gray;
+}
+
+.enlaces_contactos {
+     
+}
+
+.contactame ,
+.formulario {
+    margin: 2em;
+    padding: 2em;
+}
+
+.formulario {
+    font-size: 1em;
+    color: gray;
+}
+
+.enviar {
+    width: 5em;
+    height: 0.5em;
+    margin: 1em;
+    padding: 1em;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(148, 21, 252);
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
+/*************************
+FOOTER
+***************************/
+
+footer {
+    width: auto;
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enlaces {
+    margin: 2em;
+    display: flex;
+}
+
+.enlaces p {
+    width: 10em;
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    color: blueviolet;
+    width: 2em;
+    height: 2em;
     padding: auto;
+    background-color: aliceblue;
+    border-radius: 10rem;
+    text-align: center;
+    
 }
 
-header{
-    width: 100%;
-    height: 100%;
+address {
+    font-style: normal;
 }
-
-aside{
-    width: 540px;
-    justify-content: left;
-}
-
-main{
-background-color: whitesmoke;
-}
-
-
 

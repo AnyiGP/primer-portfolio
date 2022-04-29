@@ -5,59 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Proyecto-Final</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    
+    <title>Proyecto-Final</title>
   </head>
   <body id="Portfolio">
-    <header>
-      <nav>
-        <span><a href="#Hola">Hola</a></span>
-        <span><a href="#Conocimientos">Conocimientos</a></span>
-        <span><a href="#Proyectos">Proyectos</a></span>
-        <span><a href="#Contacto">Contacto</a></span>
-      </nav>
-    </header>
-    <aside class="foto1">
-      <img src="images/foto.svg" alt="" />
-    </aside>
+    <nav class="navegador">
+      <a class="nav1" href="#Hola">Hola</a>
+      <a class="nav2" href="#Conocimientos">Conocimientos</a>
+      <a class="nav3" href="#Proyectos">Proyectos</a>
+      <a class="nav4" href="#Contacto">Contacto</a>
+    </nav>
     <main>
-      <section id="Hola">
-        <h2>Hola! Soy</h2>
-        <h1 id="AngiGP">AngiGP</h1>
-        <h4>Diseñadora, programadora, fotógrafa</h4>
-        <h3>LO QUE HAGO</h3>
-      </section>
-      <section id="Conocimientos">
+      <div class="contenedor">
+        <section id="Hola" class="Hola">
+          <h1>Hola! Soy</h1>
+          <h2 id="AngiGP" class="AngiGP">AngiGP</h2>
+          <h3>Diseñadora, programadora, fotógrafa</h3>
+          <h4><a class="boton" href="#Proyectos">LO QUE HAGO</a></h4>
+          <!--ESTE DEBE SER UN BOTON QUE ME LLEVE A PROYECTOS-->
+        </section>
+        <aside>
+          <div class="foto1">
+            <img src="images/foto.svg" />
+          </div>
+        </aside>
+      </div>
+
+      <section id="Conocimientos" class="Conocimientos">
         <h1>Mis conocimientos</h1>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet
-          vero quasi optio magni, aliquam mollitia <br />
+        <p>
+          Lorem ipsum dolor sit , aliquam mollitia <br />
           aliquid unde expedita dolore totam <br />
-          sequi fuga consequatur labore sed, molestiae ratione architecto atque!
-        </h5>
-        <div>
-          <img src="images/html5.png" width="120px" />
-          <h3>HTML5</h3>
-          <img src="images/css3.png" width="120px" />
-          <h3>CSS3</h3>
-          <img src="images/sass.png" width="120px" />
-          <h3>Sass</h3>
-          <img src="images/JavaScript.png" width="120px" />
-          <h3>JavaScript</h3>
-          <img src="images/React.png" width="120px" />
-          <h3>React</h3>
-          <img src="images/GIT.png" width="120px" />
-          <h3>GIT</h3>
+          sequi fuga consequaturatione architecto atque!
+        </p>
+        <div class="logos">
+          <div class="html5">
+            <img src="images/html5.png" width="30%" />
+            <h2>HTML5</h2>
+          </div>
+          <div class="css3">
+            <img src="images/css3.png" width="30%" />
+            <h2>CSS3</h2>
+          </div>
+          <div class="sass">
+            <img src="images/sass.png" width="30%" />
+            <h2>Sass</h2>
+          </div>
+          <div class="java">
+            <img src="images/JavaScript.png" width="30%" />
+            <h2>JavaScript</h2>
+          </div>
+          <div class="react">
+            <img src="images/React.png" width="30%" />
+            <h2>React</h2>
+          </div>
+          <div class="git">
+            <img src="images/GIT.png" width="30%" />
+            <h2>GIT</h2>
+          </div>
         </div>
       </section>
-      <section>
+
+      <section class="cita">
         <h1>"</h1>
         <blockquote>
           Lorem ipsum dolor sit amet consectetur <br />
@@ -69,7 +84,7 @@
         <h2>@AnyiGP</h2>
       </section>
 
-      <section>
+      <section id="Proyectos" class="Proyectos">
         <div>
           <h1>Mis proyectos</h1>
           <p>
@@ -80,86 +95,117 @@
             mollitia quis molestiae similique voluptas dolorem doloremque?
           </p>
         </div>
-        <!-- <a href="#Portfolio"></a> que lleve al enlace
-        https://frontend-proyecto-portfolio.adaitw.org/# --> 
-         <img src="images/vista previa portfolio.png" width="120px" >
-         <h3>Portfolio</h3>
-        </div>
-        <div>
-            <h3>generdor de memes</h3>
-            <img src="images/" alt="">
-        </div>
-        <div>
-          <h3>Match 3</h3>
 
-        </div>
-        <div><h3>controlador de gastos</h3></div>
-        <div>
-          <h3>administrador de reuniones</h3>
-        </div>
-        <div>
-          <h3>todo app</h3>
-        </div>
-        <div>
-          <h3>buscador de peliculas</h3>
+        <div class="contenedor3">
+          <div class="portafolio">
+            <img src="images/vista previa portfolio.png" width="120px" />
+            <p><a href="#Portfolio">Portfolio</a></p>
+          </div>
+
+          <div class="memes">
+            <p><a href="#Portfolio">Generador de memes</a></p>
+            <img src="images/" alt="" />
+          </div>
+
+          <div class="match">
+            <p><a href="#Potfolio">Match 3</a></p>
+          </div>
+
+          <div class="controlador">
+            <p><a href="#Portfolio">Controlador de gastos</a></p>
+          </div>
+
+          <div class="reuniones">
+            <p><a href="#Portfolio">Administrador de reuniones</a></p>
+          </div>
+
+          <div class="app">
+            <p><a href="#Portfolio">Todo app</a></p>
+          </div>
+
+          <div class="buscador">
+            <p><a href="#Portfolio">Buscador de peliculas</a></p>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer id="Contacto">
-      <div>
-        <h2>Contactame</h2>
+    <div id="Contacto" class="contacto">
+      <div class="contactame">
+        <h1>Contactame</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           harum non blanditiis, <br />
-          voluptatem magni natus? Officia labore laborum culpa porro perferendis
           rem accusamus atque tempora animi, eveniet obcaecati eius suscipit!
         </p>
-      </div>
-      <div> <!--los iconos y el nombre los tengo q poder ver con la manito y que me redirija al principio de la web-->
-          <p>
-             <button><i class="fa-brands fa-twitter"></i>@AnyiGP</button>
-          </p> <!--icono de twyter-->
-          <p>
-             <button><i class="fa-brands fa-discord"></i></button> 2AnyiGP</p> <!--icono de -->
-          <p>
-            <button><i class="fa-brands fa-linkedin-in"></i></button>  
-            3AnyiGP</p> <!--icono de -->
+
+        <div class="enlaces_contactos">
+          <!--los iconos y el nombre los tengo q poder ver con la manito y que me redirija al principio de la web-->
+          <div class="twiter">
+            <p>
+              <a href="#Portfolio"
+                ><i class="fa-brands fa-twitter"></i>@AnyiGP</a
+              >
+            </p>
+          </div>
+
+          <div class="discord">
+            <p>
+              <a href="#Portfolio">
+                <i class="fa-brands fa-discord"></i>2AnyiGP</a
+              >
+            </p>
+          </div>
+
+          <div class="linkedin">
+            <p>
+              <a href="#Portfolio">
+                <i class="fa-brands fa-linkedin-in"></i>
+                3AnyiGP</a
+              >
+            </p>
+          </div>
+
           <address>
-              <button><i class="fa-solid fa-envelope"></i></button>
-              angeles@angeles.com
-            </address> <!--icono de mail-->
-       </div>
-       
-       <div>
-           <h1>escribime</h1>
-           <h2><Nombre>Nombre*</Nombre></h2> <!-- y un cuadro donde se pueda escribir el nombre-->
-           <h2>Apellido*</h2>
-           <h2><E-Mail>E-Mail*</E-Mail></h2>
-           <h2><Mensaje>Mensaje*</Mensaje></h2>
-           <a href="#Portfolio">Enviar</a>
-       </div>
-    </footer>
+            <p>
+              <a href="#Portfolio">
+                <i class="fa-solid fa-envelope"></i>
+                angeles@angeles.com</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <h1>Escribime</h1>
+        <h2><Nombre>Nombre*</Nombre></h2>
+        <!-- y un cuadro donde se pueda escribir el nombre-->
+        <h2>Apellido*</h2>
+        <h2><E-Mail>E-Mail*</E-Mail></h2>
+        <h2><Mensaje>Mensaje*</Mensaje></h2>
+        <p><a class="enviar" href="ange@mail.com">Enviar</a></p>
+      </div>
+    </div>
 
     <footer>
-        <div>
-        <p>Hola</p>
-        <p>Conocimientos</p>
-        <p>Proyectos</p>
-        <p>Contacto</p>
-        </div>
-        <div>
-            <!--iconos de twytter, discord, linkedin, correo-->
-            <!--llamar este espacio a los icono de mas arriba, lo puedo hacer mediante clases?-->
-            <button><i class="fa-brands fa-twitter"></i></button>
-            <button><i class="fa-brands fa-discord"></i></button>
-            <button><i class="fa-brands fa-linkedin-in"></i></button>
-            <button><i class="fa-solid fa-envelope"></i></button>
-        </div>
-        <div>
-            <p>Hecho con amor</p> <!-- poner icono corazon-->
-        </div>
-
+      <div class="enlaces">
+        <p><a href="#Hola">Hola</a></p>
+        <p><a href="#Conocimientos">Conocimientos</a></p>
+        <p><a href="#Proyectos">Proyectos</a></p>
+        <p><a href="Contacto">Contacto</a></p>
+      </div>
+      <div class="iconos">
+        <a class="twiter2" href="#Portfolio">
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="#Portfolio"> <i class="fa-brands fa-discord"></i></a>
+        <a href="#Portfolio"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#Portfolio"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div>
+        <p>Hecho con amor ❤</p>
+      </div>
     </footer>
   </body>
 </html>
