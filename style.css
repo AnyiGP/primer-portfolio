@@ -7,30 +7,30 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.navegador{
-    font-size: 1em;
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    
-    /*DEBE QUEDAR FIJO ARRIBA*/
-  }
-  
-a {
-    text-decoration: none;   
+.navegador {
+  height: 5em;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+
+  /*DEBE QUEDAR FIJO ARRIBA*/
 }
 
-.nav1 ,
-.nav2 ,
+a {
+  text-decoration: none;
+}
+
+.nav1,
+.nav2,
 .nav3 {
   width: 10vw;
   height: 0.5em;
   margin: 1em;
   padding: 1em;
-  
 }
-  
+
 .nav4 {
   width: 10vw;
   height: 0.5em;
@@ -53,13 +53,13 @@ main {
 }
 
 .contenedor {
-    background-color: white;
-    box-shadow: inset 1px 10px 10px -3px rgba(170, 170, 170, 0.371);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  background-color: white;
+  box-shadow: inset 1px 10px 10px -3px rgba(170, 170, 170, 0.371);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Hola h1 {
   margin-top: 1em;
   color: rgb(21, 21, 73);
@@ -113,7 +113,7 @@ CONOCIMIENTOS
   padding: 1em;
 }
 
-.Conocimientos h1 ,
+.Conocimientos h1,
 .Proyectos h1 {
   font-size: 3em;
   font-weight: 850;
@@ -123,7 +123,7 @@ CONOCIMIENTOS
   justify-content: center;
 }
 
-.Conocimientos p ,
+.Conocimientos p,
 .Proyectos p {
   padding-top: 2em;
   text-align: center;
@@ -250,103 +250,150 @@ PROYECTOS
 CONTACTO
 **********************************/
 
-/* .Contacto {
-  width: 60vw;
-  height: auto;
-  margin: 10em;
-  padding: 4em;
-  background-color: aliceblue;
-  border: 1px solid gray;
-  border-radius: 1em;
-  display: flex;
-} */
-
 .contacto {
-    display: flex;
+  display: flex;
+  background-color: white;
 }
 
-.contactame h1 ,
+.contactame h1,
 .formulario h1 {
-    font-size: 3em;
-    font-weight: 850;
-    color: cornflowerblue;
-  }
+  font-size: 3em;
+  font-weight: 850;
+  color: cornflowerblue;
+}
 
 .contactame p {
-    padding-top: 2em;
-    line-height: 1.5em;
-    font-size: 1em;
-    color: gray;
+  padding-top: 2em;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: gray;
 }
 
 .enlaces_contactos {
-     
 }
 
-.contactame ,
-.formulario {
-    margin: 2em;
-    padding: 2em;
+.contactame{
+  margin: 3em;
 }
 
 .formulario {
-    font-size: 1em;
-    color: gray;
+  margin: 3em;
+  font-size: 1em;
+  color: gray;
+}
+
+#Nombre ,
+#Apellido {
+  font-size: 1em;
+  color: gray;
+  box-sizing: content-box;
+  width: 100%;
+  height: 10vh;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 1em;
+  display: flex;
+}
+
+.Nombre ,
+.Apellido ,
+.E-Mail {
+    margin: 1em;
+}
+
+#E-Mail {
+  font-size: 1em;
+  color: gray;
+  box-sizing: content-box;
+  width: 100%;
+  height: 10vh;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 1em;
+}
+
+#Mensaje {
+  margin: 1em;  
+  font-size: 1em;
+  color: gray;
+  box-sizing: content-box;
+  width: 95%;
+  height: 30vh;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 1em;
+  display: flex;
+}
+
+.E-Mail label {
+}
+
+.Mensaje label {
+    margin: 1em;
+}
+
+.NombreApellido {
+  display: flex;
 }
 
 .enviar {
-    width: 5em;
-    height: 0.5em;
-    margin: 1em;
-    padding: 1em;
-    font-weight: 800;
-    color: white;
-    background-color: rgb(148, 21, 252);
-    border-radius: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  width: 5em;
+  height: 0.5em;
+  margin: 1em;
+  padding: 1em;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(148, 21, 252);
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-  
 /*************************
 FOOTER
 ***************************/
 
 footer {
-    width: auto;
-    height: auto;
-    background-color: blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .enlaces {
-    margin: 2em;
-    display: flex;
+  margin: 2em;
+  display: flex;
 }
 
 .enlaces p {
-    width: 10em;
-    display: flex;
-    justify-content: space-around;
+  width: 10em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.enlaces a {
+  color: white;
 }
 
 i {
-    color: blueviolet;
-    width: 2em;
-    height: 2em;
-    padding: auto;
-    background-color: aliceblue;
-    border-radius: 10rem;
-    text-align: center;
-    
+  margin: 0.5em;
+  padding: 0.5em;
+  color: blueviolet;
+  background-color: aliceblue;
+  border-radius: 10em;
 }
 
-address {
-    font-style: normal;
+.mensaje_final {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
 }
 
+.mensaje_final span {
+  font-size: 2em;
+  color: red;
+}

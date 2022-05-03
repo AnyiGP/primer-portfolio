@@ -177,13 +177,37 @@
         </div>
       </div>
 
+      <!--FORMULARIO----------------->
+
       <div class="formulario">
         <h1>Escribime</h1>
-        <h2><Nombre>Nombre*</Nombre></h2>
-        <!-- y un cuadro donde se pueda escribir el nombre-->
-        <h2>Apellido*</h2>
-        <h2><E-Mail>E-Mail*</E-Mail></h2>
-        <h2><Mensaje>Mensaje*</Mensaje></h2>
+        <form>
+          <div class="NombreApellido">
+          <div class="Nombre">
+            <label for="Nombre">Nombre*</label>
+            <input type="text" id="Nombre" size="35" />
+          </div>
+          <div class="Apellido">
+            <label for="Apellido">Apellido*</label>
+            <input type="text" id="Apellido" size="35" />
+          </div>
+        </div>
+
+          <div class="E-Mail">
+            <label for="E-Mail">E-Mail*</label>
+            <input type="text" id="E-Mail" size="35" />
+          </div>
+
+          <div class="Mensaje">
+            <label for="Mensaje">Mensaje*</label>
+            <input type="text" id="Mensaje" size="35" />
+          </div>
+        </form> 
+
+
+<!-- 
+        <input class="enlace" type="boton"/>
+         -->
         <p><a class="enviar" href="ange@mail.com">Enviar</a></p>
       </div>
     </div>
@@ -196,16 +220,15 @@
         <p><a href="Contacto">Contacto</a></p>
       </div>
       <div class="iconos">
-        <a class="twiter2" href="#Portfolio">
-          <i class="fa-brands fa-twitter"></i
-        ></a>
+        <a href="#Portfolio"> <i class="fa-brands fa-twitter"></i></a>
         <a href="#Portfolio"> <i class="fa-brands fa-discord"></i></a>
         <a href="#Portfolio"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="#Portfolio"><i class="fa-solid fa-envelope"></i></a>
       </div>
-      <div>
-        <p>Hecho con amor ❤</p>
+      <div class="mensaje_final">
+        <p>Hecho con amor <span>❤</span></p>
       </div>
     </footer>
+    <!-- color="#d3d4ce" -->
   </body>
 </html>
