@@ -140,7 +140,10 @@ CONOCIMIENTOS
 .sass,
 .java,
 .react,
-.git {
+.git ,
+.ai ,
+.ps ,
+.pr {
   /*SE ADAPTA AL TAMANO DE LA PAGINA, SI ES AL 100 SON 3 COLUMNAS, SI ES MAS CHICO SON 2, LAS CJAS MANTIENE SU TAMANO, LO MISMO CON LA SECTION MIS PROYECTOS*/
   width: 18vw;
   height: 16vw;
@@ -223,7 +226,9 @@ PROYECTOS
 .controlador,
 .reuniones,
 .app,
-.buscador {
+.buscador,
+.fotos ,
+.disenos {
   width: 18vw;
   height: 16vw;
   margin: 2em;
@@ -256,7 +261,7 @@ CONTACTO
 }
 
 .contactame h1,
-.formulario h1 {
+.ContenedorEscribime h1 {
   font-size: 3em;
   font-weight: 850;
   color: cornflowerblue;
@@ -272,33 +277,37 @@ CONTACTO
 .enlaces_contactos {
 }
 
-.contactame{
+.contactame {
   margin: 3em;
 }
 
-.formulario {
+.ContenedorEscribime {
   margin: 3em;
   font-size: 1em;
   color: gray;
 }
 
-#Nombre ,
+.formulario {
+}
+
+#Nombre,
 #Apellido {
   font-size: 1em;
   color: gray;
   box-sizing: content-box;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   border: none;
   background-color: whitesmoke;
   border-radius: 1em;
   display: flex;
+  padding-left: 1em;
 }
 
-.Nombre ,
-.Apellido ,
+.Nombre,
+.Apellido,
 .E-Mail {
-    margin: 1em;
+  margin: 1em;
 }
 
 #E-Mail {
@@ -306,30 +315,37 @@ CONTACTO
   color: gray;
   box-sizing: content-box;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   border: none;
   background-color: whitesmoke;
   border-radius: 1em;
+  padding-left: 1em;
 }
 
 #Mensaje {
-  margin: 1em;  
+  margin: 1em;
   font-size: 1em;
   color: gray;
   box-sizing: content-box;
   width: 95%;
-  height: 30vh;
+  height: 8vh;
   border: none;
   background-color: whitesmoke;
   border-radius: 1em;
-  display: flex;
+  padding-left: 1em;
+  /*ALGO ME ESTA CENTRANDO VERTICALMENTE EL TEXTO*/
 }
 
-.E-Mail label {
+.Mensaje {
+  margin: 1em;
 }
 
-.Mensaje label {
-    margin: 1em;
+div input {
+  margin: 1em;
+}
+
+div label {
+  margin: 1em;
 }
 
 .NombreApellido {
@@ -396,4 +412,15 @@ i {
 .mensaje_final span {
   font-size: 2em;
   color: red;
+}
+
+
+/**************************
+RESPONSIVE*********************/
+
+@media (max-with: 60vw) {
+  #Nombre ,
+  #Apellido {
+    flex-direction: column;
+  }
 }
