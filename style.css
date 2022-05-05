@@ -7,6 +7,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/*
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+*/
+
 .navegador {
   height: 5em;
   font-size: 1em;
@@ -29,6 +37,7 @@ a {
   height: 0.5em;
   margin: 1em;
   padding: 1em;
+  color: gray;
 }
 
 .nav4 {
@@ -282,6 +291,7 @@ CONTACTO
 }
 
 .ContenedorEscribime {
+  width: 50%;
   margin: 3em;
   font-size: 1em;
   color: gray;
@@ -418,9 +428,7 @@ i {
 /**************************
 RESPONSIVE*********************/
 
-@media (max-with: 60vw) {
-  #Nombre ,
-  #Apellido {
-    flex-direction: column;
-  }
+@media (min-with: 800px) {
+  .ContenedorEscribime {
+    background-color: aqua;  }
 }
