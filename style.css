@@ -173,6 +173,16 @@ CONOCIMIENTOS
   justify-content: center;
 }
 
+
+.programas {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   /*SE ADAPTA AL TAMANO DE LA PAGINA, SI ES AL 100 SON 3 COLUMNAS, SI ES MAS CHICO SON 2, LAS CJAS MANTIENE SU TAMANO, LO MISMO CON LA SECTION MIS PROYECTOS*/
   width: 18vw;
@@ -190,14 +200,7 @@ CONOCIMIENTOS
 
 .logo:hover {
   border: 1px solid #8840c7;
-}
-
-
-.programas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  color: #593c72;
 }
 
 .programas h2 {
@@ -289,6 +292,7 @@ PROYECTOS
 
 .recuadro a:hover {
   border: 1px solid #8840c7;
+  color: #8840c7;
 }
 
 .recuadro p {
