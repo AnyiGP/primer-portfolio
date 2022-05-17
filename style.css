@@ -1,6 +1,9 @@
 * {
   margin: auto;
   padding: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,14 +18,22 @@ a:active {
 }
 */
 
+li {
+  list-style: none;
+}
+
 nav {
+  width: 100%;
+  background-color: ghostwhite;
+  position: fixed;
+  box-shadow: 1px 5px 10px -3px #aaa;
   display: flex;
   justify-content: flex-end;
 }
 
 .navegador {
   width: 50%;
-  height: 5em;
+  height: 4rem;
   margin: 1em;
   font-size: 1em;
   display: flex;
@@ -89,6 +100,8 @@ main {
 
 .contenedor {
   width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   background-color: white;
   box-shadow: inset 1px 10px 10px -3px rgba(170, 170, 170, 0.371);
   display: flex;
@@ -146,9 +159,10 @@ section h3 {
 CONOCIMIENTOS
 ***************************************/
 
-.Conocimientos {
-  margin: 2em;
-  padding: 1em;
+.contenedor2 {
+  width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
 }
 
 .Conocimientos h1,
@@ -163,7 +177,8 @@ CONOCIMIENTOS
 
 .Conocimientos p,
 .Proyectos p {
-  padding-top: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   line-height: 1.5em;
   font-size: 1em;
@@ -173,9 +188,8 @@ CONOCIMIENTOS
   justify-content: center;
 }
 
-
 .programas {
-  width: 90%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -213,8 +227,9 @@ CITA
 
 .cita {
   width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #593c72;
-  
 }
 
 .cita p {
@@ -224,7 +239,6 @@ CITA
   font-size: 10em;
   font-weight: 700;
   margin-bottom: -0.5em;
-
 }
 
 blockquote {
@@ -249,34 +263,24 @@ PROYECTOS
 *****************************************/
 
 .Proyectos {
-  width: auto;
+  width: 100%;
   height: auto;
-  margin: 2em;
-  padding: 1em;
+  padding-top: 7rem;
   background-color: whitesmoke;
 }
 
-.Proyectos p {
-  padding-top: 2em;
-  text-align: center;
-  line-height: 1.5em;
-  font-size: 1em;
-  color: gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .contenedor3 {
-  width: 90%;
+  width: 80%;
   height: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.recuadro a {
+.recuadro {
   width: 18vw;
   height: 16vw;
   margin: 1em;
@@ -290,54 +294,81 @@ PROYECTOS
   flex-direction: column;
 }
 
-.recuadro a:hover {
+.recuadro:hover {
   border: 1px solid #8840c7;
   color: #8840c7;
 }
 
-.recuadro p {
-  font-size: 1em;
+.contenedor3 a {
+  color: darkslategray;
+  text-align: center;
   font-weight: 600;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
 
 /****************************
 CONTACTO
 **********************************/
+.contactame_escribime {
+  width: 100%;
+  background-color: gainsboro;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 
 .contacto {
+  width: 90%;
+  height: auto;
+  border-radius: 1em;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
-.contactame h1,
-.ContenedorEscribime h1 {
-  margin: 1rem;
+.ContactameEscribime {
+  width: 100%;
+  padding-top: 3rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contactame {
+  width: 50%;
+  margin: 3em 0em 3em 3em;
+}
+
+.contactame h1 {
   font-size: 3em;
   font-weight: 850;
+  padding-left: 1rem;
   color: cornflowerblue;
 }
 
 .contactame p {
+  width: 80%;
   margin: 1rem;
   color: gray;
   font-size: 1em;
-
+  line-height: 1.5em;
 }
 
 .enlaces_contactos {
-  width: 80vw;
-  text-align: left;
+  width: auto;
+  padding-left: 1em;
 }
 
-.enlaces_contactos a,
-.address a {
-  padding-top: 2em;
-  line-height: 1.5em;
+.enlace{
   font-size: 1em;
   color: gray;
 }
 
-.enlaces_contactos i {
+.enlace i {
   margin: 0.5em;
   padding: 0.5em;
   color: #27193c;
@@ -345,31 +376,28 @@ CONTACTO
   border-radius: 10em;
 }
 
-.enlaces_contactos a:hover {
+.enlace:hover ,
+.enlace:hover i {
   color: #ea5f5c;
 }
-
-.address a:hover {
-  color: #ea5f5c;
-}
-
-.enlaces_contactos i:hover {
-  color: #ea5f5c;
-}
-
 
 /*********formulario**********/
 
 .ContenedorEscribime {
-  width: 50%;
   margin: 3em;
   font-size: 1em;
   color: gray;
 }
 
-.contactame {
-  width: 50%;
-  margin: 3em;
+.ContenedorEscribime h1 {
+  font-size: 3em;
+  font-weight: 850;
+  color: cornflowerblue;
+  margin-left: -1rem;
+}
+
+.formulario {
+  margin-left: -3rem;
 }
 
 #Nombre,
@@ -402,13 +430,6 @@ CONTACTO
   background-color: whitesmoke;
   border-radius: 1em;
   padding-left: 1em;
-}
-
-.ContactameEscribime {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 #Mensaje {
@@ -453,6 +474,15 @@ div label {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color,box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3ms;
+}
+
+.enviar:hover {
+  background-color: #8840c7;
+  box-shadow: 1px 5px 5px 0px gainsboro;
 }
 
 /*************************
@@ -462,6 +492,8 @@ FOOTER
 footer {
   width: 100%;
   height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #593c72;
   display: flex;
   justify-content: center;
@@ -500,7 +532,6 @@ footer {
   background-color: #593c72;
 }
 
-
 .mensaje_final {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -515,7 +546,7 @@ footer {
 /**************************
 RESPONSIVE*********************/
 
-@media (max-width: 800px) {
+@media screen and (max-width: 480px) {
   .ContactameEscribime,
   .contenedor {
     flex-direction: column;
@@ -530,25 +561,23 @@ RESPONSIVE*********************/
     font-size: 80%;
   }
 
+  .recuadro {
+    width: 90vw;
+    height: 70vw;
+  }
+
   .recuadro p {
     font-size: 70%;
   }
 
-  .enlaces_contactos {
+  .contenedor3 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: column;
   }
+}
 
-  .enlace {
-    width: 40vw;
-    height: 20vw;
-  }
 
-  address{
-    width: 100vw;
-  }
 
-  .address a {
-    display: flex;
-  }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
 }
