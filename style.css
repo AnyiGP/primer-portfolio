@@ -24,7 +24,7 @@ li {
 
 nav {
   width: 100%;
-  background-color: ghostwhite;
+  background-color: white;
   position: fixed;
   box-shadow: 1px 5px 10px -3px #aaa;
   display: flex;
@@ -90,6 +90,9 @@ a {
   background-color: #8840c7;
 }
 
+.nav4:active {
+  box-shadow: 0em 0em 0.5em 0em #66abd9;
+}
 /***************************
 MAIN
 ****************************/
@@ -150,6 +153,10 @@ section h3 {
   background-color: #8840c7;
 }
 
+.boton:active {
+  box-shadow: 0em 0em 0.5em 0em #66abd9;
+}
+
 .foto1 {
   width: 20em;
   display: flex;
@@ -203,6 +210,7 @@ CONOCIMIENTOS
   height: 16vw;
   margin: 1em;
   padding: 1em;
+  color: gray;
   background-color: white;
   border: 1px solid gray;
   border-radius: 0.5em;
@@ -213,12 +221,20 @@ CONOCIMIENTOS
 }
 
 .logo:hover {
-  border: 1px solid #8840c7;
+  border: 1px solid #593c72;
   color: #593c72;
 }
 
-.programas h2 {
-  font-size: 100%;
+.logo:active {
+  box-shadow: 0em 0em 1em 0em #66abd9;
+}
+
+.logo img {
+  width: 40%;
+}
+
+.logo h2 {
+  font-size: 1em;
 }
 
 /**************************************
@@ -299,6 +315,10 @@ PROYECTOS
   color: #8840c7;
 }
 
+.recuadro:active {
+  box-shadow: 0em 0em 1em 0em #66abd9;
+}
+
 .contenedor3 a {
   color: darkslategray;
   text-align: center;
@@ -339,7 +359,7 @@ CONTACTO
 }
 
 .contactame {
-  width: 50%;
+  width: 60%;
   margin: 3em 0em 3em 3em;
 }
 
@@ -363,7 +383,7 @@ CONTACTO
   padding-left: 1em;
 }
 
-.enlace{
+.enlace {
   font-size: 1em;
   color: gray;
 }
@@ -374,12 +394,25 @@ CONTACTO
   color: #27193c;
   background-color: #8fdbd1;
   border-radius: 10em;
+  transition-property: background-color,box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3ms;
 }
 
 .enlace:hover ,
 .enlace:hover i {
   color: #ea5f5c;
 }
+
+.enlace:active {
+  width: auto;
+  border-radius: 3em;
+  padding: 1em;
+  box-shadow: 0em 0em 1em 0em #8fdbd1;
+
+}
+
 
 /*********formulario**********/
 
@@ -465,7 +498,7 @@ div label {
 .enviar {
   width: 5em;
   height: 0.5em;
-  margin: 1em;
+  margin-left: -1em;
   padding: 1em;
   font-weight: 600;
   color: white;
@@ -484,6 +517,7 @@ div label {
   background-color: #8840c7;
   box-shadow: 1px 5px 5px 0px gainsboro;
 }
+
 
 /*************************
 FOOTER
@@ -516,6 +550,14 @@ footer {
   margin: 1em;
   color: white;
   display: flex;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3ms;
+}
+
+.enlaces a:hover {
+  color: #ea5f5c;
 }
 
 .iconos i {
@@ -543,7 +585,8 @@ footer {
   color: #ea5f5c;
 }
 
-/**************************
+/*****************************
+**************************
 RESPONSIVE*********************/
 
 @media screen and (max-width: 480px) {
@@ -551,16 +594,54 @@ RESPONSIVE*********************/
   .contenedor {
     flex-direction: column;
   }
+
   .NombreApellido {
     flex-direction: column;
   }
+
   .navegador {
     display: none;
   }
-  .logo h2 {
-    font-size: 80%;
+
+  .contenedor {
+    padding-top: 2em;
+  }
+  
+  .foto1 {
+    padding-top: 3em;
+    padding-bottom: 0em;
   }
 
+  .Conocimientos h1 {
+    text-align: center;
+  } 
+
+  .Conocimientos p {
+    width: 80%;
+  }
+  
+  .logo {
+    width: 10rem;
+    height: 9rem;
+  }
+
+  .logo h2 {
+    font-size: 100%;
+  }
+
+  .logo img {
+    width: 40%;
+  }
+
+  .Proyectos p {
+    width: 80%;
+    padding-bottom: 0;
+  }
+
+  .contenedor3 {
+    padding-top: 1em;
+  }
+  
   .recuadro {
     width: 90vw;
     height: 70vw;
@@ -574,6 +655,24 @@ RESPONSIVE*********************/
     display: flex;
     justify-content: column;
   }
+
+  .contactame p {
+    width: 130%;
+  }
+
+  .contactame {
+    padding-left: 1rem;
+    margin-left: 1rem;
+  }
+
+  address{
+    width: max-content;
+  }
+
+  .ContenedorEscribime h1 {
+    padding-left: 1rem;
+  }
+
 }
 
 
