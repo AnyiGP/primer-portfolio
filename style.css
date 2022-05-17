@@ -590,15 +590,6 @@ footer {
 RESPONSIVE*********************/
 
 @media screen and (max-width: 480px) {
-  .ContactameEscribime,
-  .contenedor {
-    flex-direction: column;
-  }
-
-  .NombreApellido {
-    flex-direction: column;
-  }
-
   .navegador {
     display: none;
   }
@@ -638,20 +629,13 @@ RESPONSIVE*********************/
     padding-bottom: 0;
   }
 
-  .contenedor3 {
-    padding-top: 1em;
-  }
-  
   .recuadro {
     width: 90vw;
     height: 70vw;
   }
 
-  .recuadro p {
-    font-size: 70%;
-  }
-
   .contenedor3 {
+    padding-top: 1em;
     display: flex;
     justify-content: column;
   }
@@ -673,10 +657,108 @@ RESPONSIVE*********************/
     padding-left: 1rem;
   }
 
+  .ContactameEscribime,
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .NombreApellido {
+    flex-direction: column;
+  }
+
 }
 
-
-
 @media screen and (min-width: 481px) and (max-width: 800px) {
+  .navegador {
+    width: auto;
+    margin: auto;
+    padding: auto;
+  }
+
+  .nav4 {
+    width: max-content;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .Hola {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto1 {
+    margin-top: 4em;
+  }
+
+  .Conocimientos p {
+    width: 80%;
+  }
+
+  
+  .programas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 32vw;
+    height: 30vw;
+    margin: 2vw;
+    padding: 5vw;
+  }
+
+
+  .contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .recuadro {
+    width: 36vw;
+    height: 34vw;
+    margin: 2vw;
+    padding: 5vw;
+  }
+
+  .recuadro p {
+    font-size: 70%;
+  }
+
+  
+  .ContactameEscribime {
+    flex-direction: column;
+  }
+
+  .contactame {
+    width: 100%;
+  }
+
+  .enlaces_contactos {
+    width: 80%;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .enlaces_contactos li {
+    width: 50%;
+  }
+
+  .mail {
+    margin-left: -5.8em;
+
+  }
+
+  .ContenedorEscribime h1 {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+  
 
 }
