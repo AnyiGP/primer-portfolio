@@ -603,17 +603,26 @@ RESPONSIVE*********************/
     padding-bottom: 0em;
   }
 
-  .Conocimientos h1 {
+  .Conocimientos h1 ,
+  .Proyectos h1 ,
+  .contactame h1 ,
+  .ContenedorEscribime h1 {
     text-align: center;
+    font-size: 2em;
   } 
 
   .Conocimientos p {
     width: 80%;
   }
   
+  .programas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .logo {
-    width: 10rem;
-    height: 9rem;
+    width: 20vh;
+    height: 18vh;
   }
 
   .logo h2 {
@@ -651,10 +660,6 @@ RESPONSIVE*********************/
 
   address{
     width: max-content;
-  }
-
-  .ContenedorEscribime h1 {
-    padding-left: 1rem;
   }
 
   .ContactameEscribime,
@@ -696,7 +701,6 @@ RESPONSIVE*********************/
     width: 80%;
   }
 
-  
   .programas {
     display: flex;
     flex-wrap: wrap;
@@ -750,8 +754,13 @@ RESPONSIVE*********************/
     width: 50%;
   }
 
+  address{
+    width: max-content;
+  }
+
+
   .mail {
-    margin-left: -5.8em;
+    margin-left: -5rem;
 
   }
 
