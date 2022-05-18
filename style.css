@@ -329,7 +329,6 @@ PROYECTOS
   flex-direction: column;
 }
 
-
 /****************************
 CONTACTO
 **********************************/
@@ -394,13 +393,13 @@ CONTACTO
   color: #27193c;
   background-color: #8fdbd1;
   border-radius: 10em;
-  transition-property: background-color,box-shadow;
+  transition-property: background-color, box-shadow;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   transition-delay: 3ms;
 }
 
-.enlace:hover ,
+.enlace:hover,
 .enlace:hover i {
   color: #ea5f5c;
 }
@@ -410,9 +409,7 @@ CONTACTO
   border-radius: 3em;
   padding: 1em;
   box-shadow: 0em 0em 1em 0em #8fdbd1;
-
 }
-
 
 /*********formulario**********/
 
@@ -507,7 +504,7 @@ div label {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color,box-shadow;
+  transition-property: background-color, box-shadow;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   transition-delay: 3ms;
@@ -517,7 +514,6 @@ div label {
   background-color: #8840c7;
   box-shadow: 1px 5px 5px 0px gainsboro;
 }
-
 
 /*************************
 FOOTER
@@ -597,24 +593,24 @@ RESPONSIVE*********************/
   .contenedor {
     padding-top: 2em;
   }
-  
+
   .foto1 {
     padding-top: 3em;
     padding-bottom: 0em;
   }
 
-  .Conocimientos h1 ,
-  .Proyectos h1 ,
-  .contactame h1 ,
+  .Conocimientos h1,
+  .Proyectos h1,
+  .contactame h1,
   .ContenedorEscribime h1 {
     text-align: center;
     font-size: 2em;
-  } 
+  }
 
   .Conocimientos p {
     width: 80%;
   }
-  
+
   .programas {
     display: flex;
     flex-wrap: wrap;
@@ -623,6 +619,8 @@ RESPONSIVE*********************/
   .logo {
     width: 20vh;
     height: 18vh;
+    margin: 0.5rem;
+    padding: 0;
   }
 
   .logo h2 {
@@ -658,7 +656,7 @@ RESPONSIVE*********************/
     margin-left: 1rem;
   }
 
-  address{
+  address {
     width: max-content;
   }
 
@@ -670,7 +668,6 @@ RESPONSIVE*********************/
   .NombreApellido {
     flex-direction: column;
   }
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -731,7 +728,6 @@ RESPONSIVE*********************/
     font-size: 70%;
   }
 
-  
   .ContactameEscribime {
     flex-direction: column;
   }
@@ -753,20 +749,16 @@ RESPONSIVE*********************/
     width: 50%;
   }
 
-  address{
+  address {
     width: max-content;
   }
 
-
   .mail {
     margin-left: -5rem;
-
   }
 
   .ContenedorEscribime h1 {
     margin-left: 1rem;
     margin-bottom: 3rem;
   }
-  
-
 }
