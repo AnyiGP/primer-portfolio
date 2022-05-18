@@ -10,14 +10,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/*
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-*/
-
 li {
   list-style: none;
 }
@@ -37,8 +29,6 @@ nav {
   margin: 1em;
   font-size: 1em;
   display: flex;
-
-  /*DEBE QUEDAR FIJO ARRIBA*/
 }
 
 .navegador p {
@@ -205,7 +195,6 @@ CONOCIMIENTOS
 }
 
 .logo {
-  /*SE ADAPTA AL TAMANO DE LA PAGINA, SI ES AL 100 SON 3 COLUMNAS, SI ES MAS CHICO SON 2, LAS CJAS MANTIENE SU TAMANO, LO MISMO CON LA SECTION MIS PROYECTOS*/
   width: 18vw;
   height: 16vw;
   margin: 1em;
@@ -612,6 +601,9 @@ RESPONSIVE*********************/
   }
 
   .programas {
+    width: auto;
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -656,6 +648,10 @@ RESPONSIVE*********************/
     margin-left: 1rem;
   }
 
+  .enlaces_contactos {
+    margin-left: 0;
+  }
+
   address {
     width: max-content;
   }
@@ -666,6 +662,11 @@ RESPONSIVE*********************/
   }
 
   .NombreApellido {
+    flex-direction: column;
+  }
+
+  .enlaces {
+    display: flex;
     flex-direction: column;
   }
 }
