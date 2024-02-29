@@ -481,11 +481,22 @@ div label {
   display: flex;
 }
 
-.enviar {
-  width: 5em;
-  height: 0.5em;
-  margin-left: -1em;
-  padding: 1em;
+.btnenviar {
+appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    /* margin: 0; */
+    /* padding: 0; */
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: pointer;
+
+  width: 7em;
+  height: 3em;
+  margin-left: 2em;
   font-weight: 600;
   color: white;
   background-color: #27193c;
@@ -499,7 +510,7 @@ div label {
   transition-delay: 3ms;
 }
 
-.enviar:hover {
+.btnenviar:hover {
   background-color: #8840c7;
   box-shadow: 1px 5px 5px 0px gainsboro;
 }
